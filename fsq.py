@@ -2,28 +2,7 @@ import argparse
 import requests
 import webbrowser
 
-
-# Step 1: user passes what he wants to retrieve categories search or trending / explore along with client id and client
-# secret
-
-# An example would look like this. python fsq.py categories client_id client_secret
-# or even : python fsq.py search client_id client_secret
-
-# based on the endpoint they are trying to access we ask certain questions (except for categories where we just return
-# the categories as json)
-
-# we check if the endpoint is categories if it is, we run the get_categories function where we make a request to that
-# endpoint and return the categories
-
-# if they are trying to search
-# we then run the function search_venues that will ask the correct questions then return the answer
-
-
-# we do the same for explore and trending (create separate functions for now and see if you can refactor afterwards)
-
 ROOT_URL = "https://api.foursquare.com/v2/venues/"
-CLIENT_ID = "Y5IGDTNYOSPCOOXGSHBC0XGALFKBNO0MSZFA1QSXP3LKILG5"
-CLIENt_SECRET = "3RCSCB0GEVZX3CERI2DC4I1LU5G41ZPXFB2BUFPHWHVWBJRB"
 
 parser = argparse.ArgumentParser(description="Wrapper around the foursquare API. Use it to retrieve information about\
                                  specific venues or groups of venues.")
