@@ -7,7 +7,7 @@
 
 # Steps
 
-### Create a general.py file that will hold two function
+### Create a general.py file that will hold two functions
 ### The first one will be called create_directory (and will check if that directory exists
 ### before creating it)
 ### The second function will be called create file and it will take a name and a path
@@ -19,8 +19,7 @@
 4. Check the robots.txt file if there is one (check if the url endswith "/" first, then
    make a request to the domain + /robots.txt and return the response using the requests
    module)
-
-5. Do a who is lookup (process open "whois" + tld)
+5. Do a whois lookup (process open "whois" + tld)
 
 # Requirements
 At the start of each function, print a message detailing what is happening to let the user
